@@ -1,18 +1,18 @@
 print "Введите первую сторону треульника: "
-a = Integer(gets.chomp)
+side_a = Integer(gets.chomp)
 print "Введите вторую сторону треугольника: "
-b = Integer(gets.chomp)
+side_b = Integer(gets.chomp)
 print "Введите третью сторону треугольника: "
-c = Integer(gets.chomp)
+side_c = Integer(gets.chomp)
 
-ss = [a,b,c].sort
-p = (ss[2]**2)-(ss[1]**2)-(ss[0]**2)
+list = [side_a, side_b, side_c].sort
+p = (list [2]**2)-(list[1]**2) - (list[0]**2)
 
 if p == 0
-	puts "Треугольник прямоугольный"
-elsif ss[1] - ss[0] == 0 && ss [1] - ss[2] == 0
-	puts "Треугольник равносторонний"
-elsif ss [1] - ss[0] == 0 && ss[1] != ss[2]
-		puts "Треугольник равнобедренный"
-	else puts "Треугольник не является прямоугльным, равносторонним и равноберденным"
-	end
+  puts "Треугольник прямоугольный"
+elsif list[1] - list[0] == 0 && list [1] - list[2] == 0
+  puts "Треугольник равносторонний"
+elsif list [1] - list[0] == 0 && list[1] != list[2]
+  puts "Треугольник равнобедренный"
+else puts "Треугольник не является прямоугльным, равносторонним и равноберденным"
+end
