@@ -1,7 +1,8 @@
+# frozen_string_literal: true
 
-print "Введите размер основания треугольника "
+print 'Введите размер основания треугольника '
 a = Integer(gets.chomp)
-print "Введите высоту треугольника "
+print 'Введите высоту треугольника '
 b = Integer(gets.chomp)
-Plo = (1/2*a*b)
-puts "Прощадь треугольника равна #{c}"
+square = (1 / 2 * a * b)
+puts "Прощадь треугольника равна #{square}"
